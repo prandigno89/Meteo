@@ -25,6 +25,13 @@ function chiamaMeteo(){
     var temperatura = data.main.temp;
     //var nome = data.main.name
     console.log(city + ", "+ descrizione + ", " + icona + ", "+ temperatura);
+    
+    var img = "<p><img style=\"float: left; margin: 0px 15px 15px 0px;\" src=\'icone\\day\\01d.png\'>";
+    var descr="<h3>"+city+"</h3><h5>"+descrizione+"</h5><h3>"+temperatura+" &deg;C</h3></p>"
+    
+           
+    $('#esito').html(img+descr);
+    
     //alert(descrizione + ", "+ icona + ", " + nome);
     
     
